@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Undangan Pernikahan</title>
+	
 </head>
 <body>
 Berikut adalah Undangan Pernikahan Gratis yang saya persembahkan untuk pasangan" 
