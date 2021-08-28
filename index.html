@@ -98,12 +98,6 @@
               <div class="modal-body text-center">
                 <h1>Undangan Pernikahan</h1>
                 <h1 id="badanmodal"></h1>
-                <div>
-                  <video controls autoplay muted>
-                    <source src="https://r3---sn-uigxxi0ujipnvo-jb3k.googlevideo.com/videoplayback?expire=1629663971&ei=g14iYan3L9LTz7sP89OC6Aw&ip=97.75.254.30&id=o-AJt3vaueeyjek46frm6IfxKgkWYRGvZGZIQKiDuPaDFX&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=OMCL3eObQ8dY2goKhjjuqQ8G&gir=yes&clen=17145288&ratebypass=yes&dur=256.116&lmt=1582974022548547&fexp=24001373,24007246&c=WEB&txp=5531432&n=q-7-acFEbJGV8preu&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhANZnBCt0Cgg4plHEzUxj7dRO_WWqyHGDbVd90mFbVUqfAiEAjVWRsTXRwSoEKTe_ZV98IwcJzeX-6wygkpAkr28NELw%3D&rm=sn-fpoqnugx5h-axme7e,sn-vgqely7s&req_id=6d79b19d01f5a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mh=4H&mip=114.142.171.59&mm=29&mn=sn-uigxxi0ujipnvo-jb3k&ms=rdu&mt=1629643972&mv=m&mvi=3&pcm2cms=yes&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRgIhAJIFscM8dVPQ-LDGjPKtE3FMVa0oZhe9jX0bubJBXeQ8AiEAsIJvvcg3SGYJuxJntNbNKl2w1do4dA6szAL2qJcl3Yo%3D" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
               </div>
               <div class="modal-footer d-flex justify-content-center" id="badanmodal">
                 <div>
@@ -114,6 +108,12 @@
           </div>
         </div>
 
+        <div>
+          <audio id="myaudio">
+            <source src="https://drive.google.com/uc?id=15jXRrB3XNImDqYWEaNNCTar0Xm2JcLg8" type="audio/mp3">
+            Your browser does not support the video tag.
+          </audio>
+        </div>
 </body>
 
 <script>
@@ -145,7 +145,7 @@
         $('#myModal').modal('show');
         document.getElementById("badanmodal").innerHTML = namaLK + ' & ' + namaPR;
         $('#bukaundangan').click(function() {
-          $("video").prop('muted', false);  
+          document.getElementById("myaudio").play();
         });
         
 
@@ -164,12 +164,5 @@
         });
 });
 
-
-
-
-
-$('.modal-content').click(function() {
-        $('#myModal').modal('hide')
-    });
 </script>
 </html>
